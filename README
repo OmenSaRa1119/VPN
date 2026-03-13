@@ -1,0 +1,16 @@
+SETUP STEPS:
+1. Install Python from python.org
+2. Install requests library: pip install requests
+3. Install OpenVPN from openvpn.net/community-downloads
+4. Get a FREE Los Angeles .ovpn config file from:
+   → vpnbook.com (free, pick a US server)
+   → protonvpn.com (free tier, pick US-LA)
+5. Place the .ovpn file in THIS folder
+5. Double-click run.bat AS ADMINISTRATOR
+
+KILL SWITCH:
+If VPN drops, all internet is blocked automatically.
+Click the button to disconnect and restore internet.
+For Direct Kill Switch:
+1. netsh advfirewall set allprofiles firewallpolicy blockinbound,allowoutbound
+2. taskkill /F /IM openvpn.exe
